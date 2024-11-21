@@ -1,0 +1,389 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="876.0000000000001,5184" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="stateName" />
+      <Variable x:TypeArguments="x:String" Name="type" />
+      <Variable x:TypeArguments="x:String" Name="bill" />
+      <Variable x:TypeArguments="x:String" Name="recommendedCapacity" />
+      <Variable x:TypeArguments="x:String" Name="projectCost" />
+      <Variable x:TypeArguments="x:String" Name="electricityPerDay" />
+      <Variable x:TypeArguments="x:String" Name="financialSavings" />
+      <Variable x:TypeArguments="sd:DataTable" Name="solarTable" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="516.8,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Whats the state you reside in?" Title="Solar Efficiency">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[stateName]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="516.8,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Commercial or residential" OptionsString="Commercial;Residential" Title="What for?">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[type]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="516.8,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Avg monthly bill" Title="Electricity iNfo">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[bill]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome National Portal for Rooftop Solar - Mi" sap:VirtualizedContainerService.HintSize="516.8,3216" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d8ebfa15-4463-43b8-a2ec-66a790e8f38c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,2967.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="449.6,270.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+              <uix:NMouseScroll.SearchedElement>
+                <uix:SearchedElement>
+                  <uix:SearchedElement.Target>
+                    <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/rooftop_calculator" ContentHash="27N1GqCR7kS6qk0RmjLGZA" DesignTimeRectangle="900, 945, 117, 46" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary textTransNone css-sghohy-MuiButtonBase-root-MuiButton-root' aaname=' Calculate ' check:innerText='Calculate' /&gt;" Guid="1aafd860-283e-477b-8645-48283ab4d09a" InformativeScreenshot="8d576231cba0ae5388cbee4fa64fa06a.png" Reference="hZBuvo16PUWX07BROUOkig/ql4KMXJR9kG7qwXi8BPfxw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:SearchedElement.Target>
+                  <uix:SearchedElement.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:SearchedElement.Timeout>
+                </uix:SearchedElement>
+              </uix:NMouseScroll.SearchedElement>
+            </uix:NMouseScroll>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rs'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8ebfa15-4463-43b8-a2ec-66a790e8f38c" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/rooftop_calculator" ContentHash="eRNF7JWH5k6jtwQaT93RIA" DesignTimeRectangle="428, 621, 500, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id=':r4:' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input' aaname='' /&gt;" Guid="56515b12-9ca7-400a-b8ac-b6ab2f713c70" InformativeScreenshot="a28b848f858a1900fd936ffce6c342f1.png" IsResponsive="True" Reference="hZBuvo16PUWX07BROUOkig/eBNTsjXQ5kaJNDVg5NIOQw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="388, 631, 23, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiTypography-root MuiTypography-body1 css-14ko020-MuiTypography-root' aaname='Rs' check:innerText='Rs' /&gt;" Guid="1c3ad626-9cd2-4419-a464-b3a26c19bd3a" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Rs'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="d8ebfa15-4463-43b8-a2ec-66a790e8f38c" Text="[bill]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/rooftop_calculator" ContentHash="eRNF7JWH5k6jtwQaT93RIA" DesignTimeRectangle="428, 621, 500, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id=':r4:' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input' aaname='' /&gt;" Guid="56515b12-9ca7-400a-b8ac-b6ab2f713c70" InformativeScreenshot="a28b848f858a1900fd936ffce6c342f1.png" IsResponsive="True" Reference="hZBuvo16PUWX07BROUOkig/eBNTsjXQ5kaJNDVg5NIOQw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="388, 631, 23, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiTypography-root MuiTypography-body1 css-14ko020-MuiTypography-root' aaname='Rs' check:innerText='Rs' /&gt;" Guid="1c3ad626-9cd2-4419-a464-b3a26c19bd3a" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your Category'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d8ebfa15-4463-43b8-a2ec-66a790e8f38c" Text="[type + &quot;[k(Down)][k(Enter)]&quot;]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/rooftop_calculator" ContentHash="mzkw8AGMSkSr3N9rWfGgAQ" DesignTimeRectangle="380, 589, 500, 35" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id=':r2:' tag='INPUT' type='text' class='MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-19qh8xo-MuiInputBase-input-MuiOutlinedInput-input' aaname='' /&gt;" Guid="feea34dc-cd15-46f1-b417-1dcd0adfaedb" InformativeScreenshot="00c037a5f17b20d702748aa99b8276a4.png" Reference="hZBuvo16PUWX07BROUOkig/i9mbI8ZEgkyOLTJFmaGwLg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="372, 556, 557, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Your Category' tag='LABEL' type='' class='custom-label text_start' check:innerText='Your Category' /&gt;" Guid="2e8f4a37-7bcc-447a-81a5-d3781bebefcd" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your State'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="d8ebfa15-4463-43b8-a2ec-66a790e8f38c" Text="[stateName + &quot;[k(Down)][k(Enter)]&quot;]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/rooftop_calculator" ContentHash="RLWo4UxSkU-N3wFOLyFAzA" DesignTimeRectangle="372, 172, 557, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' parentid='root' tag='DIV' class='MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root' aaname='' /&gt;" Guid="c5d1f0f6-d204-4bf7-91d4-b976715c01de" InformativeScreenshot="0a9b70b8630e3a191ac3cfe35dade363.png" IsResponsive="True" Reference="hZBuvo16PUWX07BROUOkig/NK7X5b5dLUe_FqE7-J2aLw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="372, 146, 557, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='custom-label text_start' aaname='Your State' check:innerText='Your State' /&gt;" Guid="62aa6a4d-6ae7-4c02-a21c-6a913e65d530" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Calculate'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8ebfa15-4463-43b8-a2ec-66a790e8f38c" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/rooftop_calculator" ContentHash="YPeA9laLU0uGlVy217Fjqw" DesignTimeRectangle="900, 930, 117, 46" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary textTransNone css-sghohy-MuiButtonBase-root-MuiButton-root' aaname=' Calculate ' check:innerText='Calculate' /&gt;" Guid="7a493bf9-27af-433a-9fb9-eb2da37ed3e1" InformativeScreenshot="55d7f8f3041a68a1c53dd39818f15df0.png" Reference="hZBuvo16PUWX07BROUOkig/Wl2zbGz_JEyn0OFI0fYpMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="352, 910, 1193, 66" FuzzySelectorArgument="&lt;webctrl type='' class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1bc19ni-MuiGrid-root' parentid='root' tag='DIV' aaname='' check:innerText='Calculate' /&gt;" Guid="c3975059-e834-4660-855b-0abb41e3c989" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome National Portal for Rooftop Solar - Mi(1)" sap:VirtualizedContainerService.HintSize="449.6,1324.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a972759e-05dc-48e1-8b69-0c11e783c96f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1083.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'The Recommended capacit…'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a972759e-05dc-48e1-8b69-0c11e783c96f" TextString="[recommendedCapacity]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/calculated-data" ContentHash="gXVipoaZvEmCTT0oS0xCKA" DesignTimeRectangle="1423, 493, 66, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="92c91625-71b8-40f1-942c-b1246804ef9e" InformativeScreenshot="a8876346ffa4fbcd4311c037b5c0fffb.png" Reference="hZBuvo16PUWX07BROUOkig/_rsaOPFyR0WL8Lz6KQVExg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="428, 491, 1061, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='MuiTypography-root MuiTypography-h5 css-rb6b2s-MuiTypography-root' aaname='The Recommended capacity for Rooftop Solar Plant as per your inputs is: ' check:innerText='The Recommended capacity for Rooftop Solar Plant as per your inputs is: 1 kW' /&gt;" Guid="8a84b8b8-4bda-47b1-98af-f1121d54ccd2" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="382.4,270.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+                      <uix:NMouseScroll.SearchedElement>
+                        <uix:SearchedElement>
+                          <uix:SearchedElement.Target>
+                            <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/calculated-data" ContentHash="-ZQhZA2wC02Eulbq_u9QhQ" DesignTimeRectangle="1028, 852, 235, 101" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-kuqv8p-MuiTypography-root' tag='P' aaname='1576kWh/year' check:innerText='1576&amp;#xA;kWh/year' /&gt;" Guid="556cf8e6-27c6-4b85-97c1-354b7a766a93" InformativeScreenshot="0443ff5bf405f2f8a9797ea4f0db6e77.png" Reference="hZBuvo16PUWX07BROUOkig/SiI9Sen1n0uhBj3YU_sUFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                          </uix:SearchedElement.Target>
+                          <uix:SearchedElement.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:SearchedElement.Timeout>
+                        </uix:SearchedElement>
+                      </uix:NMouseScroll.SearchedElement>
+                    </uix:NMouseScroll>
+                    <uix:NGetText DisplayName="Get Text 'Estimated Project Cost'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="a972759e-05dc-48e1-8b69-0c11e783c96f" TextString="[projectCost]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/calculated-data" ContentHash="tXDs9Wjlo0KgGSd_WcwgBw" DesignTimeRectangle="679, 387, 234, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-pf3kp1-MuiTypography-root' isleaf='1' tag='P' /&gt;" Guid="23221222-419f-4577-8f21-38a976821f5a" InformativeScreenshot="208a222262dcbfda1b458345fc1397c6.png" Reference="hZBuvo16PUWX07BROUOkig/qJyMoV0Yi0mrbrEG2rE7Cw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="679, 258, 234, 109" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-100idt1-MuiTypography-root' isleaf='1' tag='P' aaname='Estimated Project Cost' check:innerText='Estimated Project Cost' /&gt;" Guid="a3f1a9ea-3ca6-4f8d-8042-7f7f0fe03425" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Electricity Generation'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="a972759e-05dc-48e1-8b69-0c11e783c96f" TextString="[electricityPerDay]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/calculated-data" ContentHash="mHxb9Pmnz0uLadbu3sE5cQ" DesignTimeRectangle="1028, 732, 235, 100" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-kuqv8p-MuiTypography-root' tag='P' /&gt;" Guid="3c06a85f-ddb9-42fc-93d4-375c78b37dfa" InformativeScreenshot="b5b980a1350f856b801588afa841eeb8.png" Reference="hZBuvo16PUWX07BROUOkig/we7dSJ8PxEyI-MTorcQ24Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1028, 614, 235, 98" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-75qum0-MuiTypography-root' isleaf='1' tag='P' aaname='Electricity Generation' check:innerText='Electricity Generation' /&gt;" Guid="e08780c5-f50f-471a-85d7-cd619206124e" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Financial Savings'" sap:VirtualizedContainerService.HintSize="382.4,182.4" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="a972759e-05dc-48e1-8b69-0c11e783c96f" TextString="[financialSavings]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="pmsuryaghar.gov.in/calculated-data" ContentHash="XMDqb76y2E6GNyjopLhkAA" DesignTimeRectangle="1368, 297, 255, 67" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-1tmdgg9-MuiTypography-root' isleaf='1' tag='P' /&gt;" Guid="20708486-0643-497d-9a3f-42dfd036b660" InformativeScreenshot="59688d5b874100d00259b58794d6d80e.png" Reference="hZBuvo16PUWX07BROUOkig/uZ2oKhiGcEqICbWBmgB7pA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1378, 208, 235, 69" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MuiTypography-root MuiTypography-body2 css-11o6nle-MuiTypography-root' isleaf='1' tag='P' aaname='Financial Savings' check:innerText='Financial Savings' /&gt;" Guid="7b46565a-224f-45a3-a326-9cbc4419cda2" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="qmth_K5OUUGEwKc8YUm5NA" IconBase64="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" InformativeScreenshot="d92e91ef310325ccbf76192ac3f594f3.jpg" Reference="hZBuvo16PUWX07BROUOkig/QeAwJZ9vI0qcW8hooF8Pmg" Selector="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" Title="National Portal for Rooftop Solar - Ministry of New and Renewable Energy" Url="https://www.pmsuryaghar.gov.in/calculated-data" Version="V1" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="OOWRpH-JIUuT1BWDtEdeeA" IconBase64="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" InformativeScreenshot="4bcce5016938aae3c40469ea7d6bdbca.jpg" Reference="hZBuvo16PUWX07BROUOkig/wGDfQBQp00G0uXnO_aBZkw" Selector="&lt;html app='chrome.exe' title='National Portal for Rooftop Solar - Ministry of New and Renewable Energy' /&gt;" Title="National Portal for Rooftop Solar - Ministry of New and Renewable Energy" Url="https://www.pmsuryaghar.gov.in/rooftop_calculator" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:BuildDataTable DataTable="[solarTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="516.8,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;State&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Category&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Bill&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Projectcost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Electricity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Savings&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{stateName, type, bill, projectCost, electricityPerDay, financialSavings}]" DataTable="[solarTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="516.8,220" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+    <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="516.8,312.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" SensitivityOperation="None" WorkbookPath="solarAnalysis.XLSX">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,171.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[solarTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="382.4,111.2" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="SolarSheet" StartingCell="A1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="516.8,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Email: " Title="Enter Email">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[stateName + &quot; &quot; + type + &quot; &quot; + bill + &quot; &quot; + electricityPerDay + &quot; &quot; + projectCost + &quot; &quot; + financialSavings]" DisplayName="Send SMTP Mail Message" Email="220701236@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="516.8,172" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="thtj iygk omdl jngq" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Solar Panel Cost Estimation" To="[email]">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+      </ui:SendMail.Files>
+    </ui:SendMail>
+  </Sequence>
+</Activity>
